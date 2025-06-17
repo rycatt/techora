@@ -1,54 +1,54 @@
-# React + TypeScript + Vite
+<h1 align="center">Techora 🖥️</h1>
+<p align="center"><i>Your go-to destination for computer parts and tech components</i></p>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## What is Techora?
 
-Currently, two official plugins are available:
+Techora is a modern online store where you can easily browse and buy computer parts. Whether you're building a new PC or upgrading your current one, Techora offers a smooth and easy shopping experience with a simple interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+<details open>
+<summary>
+ Features
+</summary> <br />
 
-## Expanding the ESLint configuration
+- **Smart Shopping Cart** - Add items, adjust quantities, and manage your purchases
+- **Easy Navigation** - Browse between home and shop pages seamlessly  
+- **Responsive Design** - Works perfectly on desktop, tablet, and mobile
+- **Real-time Updates** - See your cart count update instantly
+- **User-Friendly Controls** - Simple +/- buttons and manual quantity input
+- **Tech-Focused** - Specialized catalog for computer parts and components
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+</details>
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## Getting Started
+
+<details open>
+<summary>
+Quick Setup
+</summary> <br />
+
+1. **Clone the repository**
+```bash
+git clone https://github.com/rycatt/techora.git
+cd techora
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+2. **Install dependencies**
+```bash
+npm install
 ```
+
+3. **Start the development server**
+```bash
+npm start
+```
+
+</details>
+
+## Usage
+
+**Shopping Experience**
+- Browse our catalog of computer parts on the shop page
+- Add items to your cart with the "Add to Cart" button
+- Adjust quantities using the +/- controls or type exact amounts
+- View your cart count in the navigation bar
+- Navigate easily between pages
