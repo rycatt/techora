@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className="mx-auto max-w-7xl px-4">
         <nav className="relative z-50 flex justify-between">
           <div>
-            <h1 className="font-bold text-2xl">
+            <h1 className="font-bold text-3xl">
               <Link to="/" className="cursor-pointer">
                 Techora
               </Link>
