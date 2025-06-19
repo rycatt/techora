@@ -8,7 +8,7 @@ import Shop from "./pages/Shop";
 
 function App() {
   return (
-    <div className="bg-slate-950 min-h-screen text-white font-geist">
+    <div className=" min-h-screen text-white font-geist">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
