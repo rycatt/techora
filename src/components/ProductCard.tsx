@@ -1,18 +1,8 @@
 import { VscTriangleLeft } from "react-icons/vsc";
-
-interface ProductCardProps {
-  imageSrc: string;
-  name: string;
-  description: string;
-  price: string;
-  bgColor: string;
-  rotation: string;
-  position: string;
-  imageClassName: string;
-}
+import type { ProductCardProps } from "../types";
 
 export default function ProductCard({
-  imageSrc,
+  image,
   name,
   description,
   price,
@@ -32,7 +22,7 @@ export default function ProductCard({
     >
       <h1 className="text-lg font-bold text-white tracking-tight">{name}</h1>
       <div className="flex justify-center relative mt-8">
-        <img src={imageSrc} alt={name} className={imageClassName} />
+        <img src={image} alt={name} className={imageClassName} />
         <div className="absolute top-10 right-0 bg-white text-gray-800 px-4 py-1 rounded-full -rotate-6 font-bold shadow">
           <VscTriangleLeft className="absolute top-0 -left-4 size-8 text-white" />
           {price}

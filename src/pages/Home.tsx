@@ -27,7 +27,7 @@ export default function Home() {
         </div>
 
         <ProductCard
-          imageSrc={rtx4070}
+          image={rtx4070}
           name="NVIDIA GeForce RTX 4070 Ti"
           description="NVIDIA GeForce RTX 4070 delivers powerful 1440p gaming with ray tracing and DLSS 3 support."
           price="$799"
@@ -38,7 +38,7 @@ export default function Home() {
         />
 
         <ProductCard
-          imageSrc={amd}
+          image={amd}
           name="AMD Ryzen™ 9 9950X3D"
           description="The ultimate 16-core desktop CPU with 2nd gen AMD 3D V-Cache™
             Technology"
