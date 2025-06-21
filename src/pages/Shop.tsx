@@ -1,5 +1,6 @@
-import rtx4070 from "../assets/RTX 4070 Ti.png";
-import ProductItem from "../components/ProductItem";
+import rtx4070 from '../assets/RTX 4070 Ti.png';
+import ProductItem from '../components/ProductItem';
+import { Link } from 'react-router-dom';
 
 export default function Shop() {
   return (
@@ -7,15 +8,15 @@ export default function Shop() {
       <nav className="text-lg text-gray-500 py-4">
         <ul className="flex space-x-2">
           <li>
-            <a href="/" className="hover:underline">
+            <Link to="/" className="hover:underline">
               Home
-            </a>
+            </Link>
           </li>
           <li className="flex items-center">
             <span className="mx-2">›</span>
-            <a href="/shop" className="hover:underline text-white">
+            <Link to="/shop" className="hover:underline text-white">
               Products
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
