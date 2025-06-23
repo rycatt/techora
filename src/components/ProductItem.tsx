@@ -21,7 +21,7 @@ export default function ProductItem({
         <h2 className="font-medium text-slate-100 text-xl truncate mb-1">
           {name}
         </h2>
-        <p className="text-2xl text-white font-bold">{price}</p>
+        <p className="text-2xl text-white font-bold">${price}</p>
       </div>
     </div>
   );

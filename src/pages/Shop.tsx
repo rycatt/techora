@@ -1,6 +1,5 @@
-import rtx4070 from '../assets/RTX 4070 Ti.png';
-import ProductItem from '../components/ProductItem';
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import ProductList from "../components/ProductList";
 
 export default function Shop() {
   return (
@@ -20,16 +19,7 @@ export default function Shop() {
           </li>
         </ul>
       </nav>
-      <div className="flex justify-center">
-        <div className="grid grid-cols-3 gap-5">
-          <ProductItem
-            image={rtx4070}
-            alt="RTX 4070 Ti"
-            name="NVIDIA GeForce RTX 4070 Ti"
-            price="$799.99"
-          />
-        </div>
-      </div>
+      <ProductList />
     </div>
   );
 }

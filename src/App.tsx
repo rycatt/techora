@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import Cart from "./pages/Cart";
 import Home from "./pages/Home";
 import NotFound from "./pages/NotFound";
-import Product from "./pages/Product";
+import ProductDetail from "./pages/ProductDetail";
 import Shop from "./pages/Shop";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
-        <Route path="/shop/product/:id" element={<Product />} />
+        <Route path="/product/:productId" element={<ProductDetail />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
